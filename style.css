@@ -1,0 +1,550 @@
+:root{
+    --dark-purple: #331c52;
+    --light-purple : #932aea;
+    --purple : #8121d0;
+    --bg-purple : #492E87;
+    --dark : #291c3a;
+    --gray-white : #dccfed;
+    --green-white : #e1ebed;
+    --mint : #96E9C6;
+}
+
+body{
+    background-color: var(--dark-purple);
+    color: var(--green-white);
+    transition: 0.8s;
+}
+.reveal
+{
+    position: relative;
+    transform: translateY(130px);
+    opacity: 0;
+    transition: 1s all ease;
+}  
+.reveal.active
+{
+    transform: translateY(0);
+    opacity: 1;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--gray-white);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--light-purple);
+    border-radius: 20px;
+}
+
+/*................... nav bar start .................  */
+#navbar-example{
+    background-color: var(--purple);
+}
+.navbar .nav-link.active {
+    color: var(--mint);
+}
+#navbarNav{
+    justify-content: right;
+}
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.nav-item{
+    padding: 0 20px;
+    position: relative;
+}
+.nav-link, .nav-link:hover {
+    color: white;
+}
+.nav-item:hover::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: var(--mint);
+    position: absolute;
+    left: 0;
+}
+#moon > a{
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 20px;
+}
+#moon > a:hover{
+    color: var(--purple);
+}
+#moon:hover::after{
+    content: none;
+}
+.light{
+    background-color: #f9f9f9;
+    color: black;
+}
+/*................... nav bar end .................  */
+
+/*................... home start .................  */
+#home{
+    align-items: center;
+    padding-top: 40px;
+}
+#hello > p{
+    font-size: 12pt;
+    line-height: 1.8;
+}
+#hello > h1{
+    text-transform: uppercase;
+    font-weight: bold; 
+    color: var(--light-purple);
+}
+
+/*// Glow Border Animation //*/
+#center-box{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green-white);
+    width: 3rem;
+    height: 3rem;
+    font-size: 14pt;
+    text-decoration: none;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.animated-border-box, .animated-border-box-glow{
+    max-height: 60px;
+    max-width: 60px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    overflow: hidden; 
+    z-index: 0;
+    border-radius: 10px;
+}
+.animated-border-box a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 80%;
+    height: 80%;
+    margin: 6px auto;
+    border-radius: 7px;
+    font-size: 14pt;
+    text-decoration: none;
+    color: white;
+    background-color: var(--bg-purple);
+}
+.animated-border-box a:hover{
+    background-color: var(--green-white);
+    color: var(--dark);
+}
+.animated-border-box-glow{
+    overflow: hidden;
+    filter: blur(20px);
+}
+.animated-border-box:before, .animated-border-box-glow:before{
+    content: '';
+    z-index: -2;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg);
+    position: absolute;
+    width: 99999px;
+    height: 99999px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-image: conic-gradient( #6f47cc, rgba(69, 47, 47, 0) 23%);
+    animation: rotate 4s linear infinite;
+}
+.animated-border-box:after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 5px;
+    top: 5px;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background: transparent;
+    border: 2px solid var(--purple);
+    border-radius: 7px;
+}
+@keyframes rotate {
+    100% {
+    transform: translate(-50%, -50%) rotate(1turn);
+    }
+}
+/*// Border Animation END//*/
+
+#download{
+    padding: 10px 20px;
+    background-color: var(--purple);
+    color: white;
+}
+#download:hover{
+    cursor: grab;
+    box-shadow: 3px 3px gainsboro;
+}
+#download:active{
+    cursor: grabbing;
+}
+#home-img{
+    text-align: center;
+}
+#home-img > img{
+    margin-top: 12px;
+    margin-bottom: 20px;
+    border-radius: 30% 70% 51% 49% / 30% 45% 55% 70%  ;
+    transition: transform 2s ease;
+}
+#home-img > img:hover{
+    transform: translate(5%,-3%);
+}
+/*................... home end .................  */
+
+/*................... about me start .................  */
+#about{ 
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to right top, #492e87, #442979, #3f256c, #39205f, #331c52);
+    color: white;
+}
+#about-content > h2{
+    font-size: 28pt;
+}
+#about-content > h4{
+    margin-bottom: 20px;
+    font-size: 15pt;
+    font-weight: 300;
+    font-family: calibri;
+}
+#about-content > p{
+    line-height: 1.5;
+    word-spacing: 3px;
+    font-family: calibri;
+    font-size: 13pt;
+}
+#hire{
+    padding: 10px 30px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background-color: var(--purple);
+    color: white;
+}
+#hire:hover{
+    cursor: grab;
+    box-shadow: 3px 3px gainsboro;
+}
+#hire:active{
+    cursor: grabbing;
+}
+/*................... about me end .................  */
+
+/*................... service start .................  */
+#services
+{
+    margin-top: 70px;
+    padding-top: 55px;
+    margin-bottom: 80px;
+}
+#services > h2
+{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 40px;
+}
+#services-content > div
+{
+    transition: 0.5 ease;
+    margin-bottom: 20px;
+}
+#services-content > div:hover
+{
+    box-shadow: 5px 5px 1px 1px rgb(88, 69, 134);
+    transform: scale(1.01);
+}
+#web,#creative,#photo
+{
+    border: 2px solid var(--gray-white);
+    border-top: 5px solid var(--light-purple);
+    border-bottom: 6px solid var(--light-purple);
+    border-radius: 20px;
+    text-align: center;
+}
+#web > i,#creative > i,#photo > i
+{
+    margin-top: 18px;
+    color: var(--light-purple);
+    font-size: 25pt;
+}
+#web > h2,#creative > h2,#photo > h2
+{
+    margin-bottom: 15px;
+}
+#web > h2:hover,#creative > h2:hover,#photo > h2:hover 
+{
+    color: var(--light-purple);
+    cursor: pointer;
+}
+#web > p,#creative > p,#photo > p
+{
+    padding: 15px 0;
+}
+/*................... service end .................  */
+
+/*................... portfolio start .................  */
+#portfolio
+{
+    margin-top: 80px;
+    padding-top: 55px;
+    margin-bottom: 80px;
+}
+#portfolio > h2
+{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 40px;
+}
+#portfolio-content{
+    overflow: hidden;
+    background-image: linear-gradient(to right top, #492e87, #442979, #3f256c, #39205f, #331c52);
+    color: white;
+}
+#portfolio-content > div{
+    height: 160px;
+    display: flex;
+    align-items: center;
+}
+#portfolio-content > div > img{
+    transition: transform 2s ease;
+}
+#portfolio-content > div > img:hover{
+    overflow: hidden;
+    transform: scale(1.1);
+}
+#portfolio-content > h4{
+    text-align: center;
+    color: #9d47f3;
+    margin: 10px auto;
+}
+#portfolio-content > label{
+    font-size: 10pt;
+    height: 100px;
+}
+#portfolio-content > p{
+    margin: 10px 0;
+    color: #a578f3;
+}
+#portfolio-content > span{
+    display: flex;
+    justify-content: flex-end;
+}
+#portfolio-content > span > a{
+    font-size: 13pt;
+    padding: 0 8px;
+    color: var(--mint);
+}
+#portfolio-content > span > a:hover{
+    color: #4babae;
+}
+.swiper{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px auto;
+    width: 100%;
+    padding: 0 20px 40px;
+    z-index: 0;
+}
+.swiper-btns{
+    position: absolute;
+    display: flex;
+    margin-top: 0;
+    width: 100%;
+    justify-content: space-between;
+    z-index: 1;
+}
+.swiper-btns button{
+    position: static;
+    background-color: var(--purple);
+    color: white;
+    border: none;
+    width: 43px;
+    height: 43px;
+    margin-top: 40px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 12pt;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.swiper-btns button:hover{
+    background-color: var(--green-white);
+    color: black;
+}
+.swiper-pagination-bullet-active {
+    background-color: var(--light-purple) !important;
+}
+/*................... portfolio end .................  */
+
+/*................... contact start .................  */
+#contact{
+    padding-top: 50px;
+    margin-bottom: 100px;
+}
+#contact > h2{
+    text-align: center;
+    font-size: 30pt;
+    margin-bottom: 40px;
+}
+#contact-info{
+    margin-top: 30px;
+    font-size: 15pt;
+}
+#contact-info > p{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form-control{
+    box-shadow: 5px 5px 1px 1px rgb(88, 69, 134);
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    font-size: 13pt;
+}
+.form-control-dark{
+    color: white;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: #8121d0;
+}
+textarea{
+    resize: none !important;
+}
+#send{
+    padding: 10px 50px;
+}
+#send:hover{
+    cursor: grab;
+    box-shadow: 3px 3px gainsboro;
+}
+#send:active{
+    cursor: grabbing;
+}
+/*................... contact end .................  */
+
+/*................... footer start .................  */
+#footer{
+    background-color: var(--dark);
+}
+#footer-social{
+    text-align: center;
+    padding: 20px;
+}
+#footer-social > a{
+    color: white;
+    font-size: 18pt;
+    padding: 25px 10px;
+}
+#footer-social > a:hover{
+    color: #932aea;
+}
+hr{
+    color: white;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+}
+#footer-text{
+    text-align: center;
+}
+#footer-text > p{
+    margin-top: 15px;
+    color: white;
+    font-size: 15pt;
+}
+/*................... footer end .................  */
+
+
+#details-text{
+    list-style: none;
+    text-align: center;
+    display: table;
+    width: 700px;
+}
+#details-text li{
+    position: relative;
+    padding: 15px 0;
+    display: table-cell;
+}
+#details-text li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 15pt;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+}
+#details-text li a:hover::after,
+#details-text li a.text-active::after {
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--light-purple);
+    height: 2px;
+    margin-top: 2px;
+    width: 100%;
+    left: 0;
+}
+#details-text li a::after{
+    position: absolute;
+    content: "";
+    display: block;
+    background-color: var(--light-purple);
+    height: 2px;
+    width: 0;
+    left: 50%;
+    margin-top: 3px;
+    transition: 0.25s ease-out;
+}
+@media screen and (max-width : 1000px){
+    #details-text{
+        display: block;
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 30px;
+        padding-left: 0;
+        justify-content: center;
+    }
+    #details-text li{
+        display: inline-block;
+        padding: 0 12px;
+        margin-top: 10px;
+    }
+}
+#experience{
+    display: none;
+}
+#experience div label{
+    color: var(--mint);
+    font-size: 12pt;
+    font-weight: bold;
+}
+#experience div p{
+    margin-top: 10px;
+    font-size: 12pt;
+}

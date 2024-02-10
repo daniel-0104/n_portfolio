@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HP</title>
+
+    <!-- css bootstrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+    <!-- font-awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- animate  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax//libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- bootstrap icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- swiper css  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- email.js -->
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+
+    <script type="text/javascript"> (function(){
+    emailjs.init("V-t9kyBn3n5Fv2S6s");
+    })();
+    </script>
+</head>
+<link rel="icon" href="image/icons8-dragon-100.png">
+<body data-bs-spy="scroll" data-bs-target="#navbar-example">
+    <div id="home-top"></div> 
+
+    <!-- header  -->
+    <nav class="navbar navbar-expand-lg shadow-sm sticky-top" id="navbar-example" >
+        <div class="container-fluid">
+            <a class="navbar-brand ps-3 text-white" href="#">My Portfolio.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link active" aria-current="page" href="#home-top">Home</a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item col-4 col-lg-auto" id="moon">                   
+                        <a class="nav-link" href="#navbar-example"><i class="bi-moon-fill" id="darkmode-icon"></i></a>
+                    </li>
+                </ul>
+            </div>   
+        </div>
+    </nav>
+
+
+    <!-- home  -->
+    <section class="home" id="home">
+        <div class="container-lg">
+            <div class="row align-items-center align-content-center">
+                <div class="col-lg-6 col-md-6 col-sm-6 mb-2 animate__animated animate__fadeInDown" id="home-img">
+                    <img src="image/profile.png" class="w-75 d-block mx-auto">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 order-sm-first" id="hello">
+                    <h5 class="animate__animated animate__fadeInDown animate__delay-1s">Hello I'm</h5>
+                    <h1 class="animate__animated animate__fadeInDown animate__delay-2s">Web Developer</h1>
+                    <h3 class="fs-3 animate__animated animate__fadeInDown animate__delay-3s">Hnin Pwint Phyu</h3>
+                    <p class="animate__animated animate__fadeInDown animate__delay-3s">A web designer and developer from Yangon in Myanmar. I focus on writing clean, elegant and efficient code. I create bespoke websites to help people go further online.</p>
+                    <div id="social_media" class="animate__animated animate__fadeInDown animate__delay-3s">
+                        <div id="center-box">
+                            <div class="animated-border-box-glow"></div>
+                            <div class="animated-border-box">
+                                <a href="https://github.com/daniel-0104"><i class="fa-brands fa-github"></i></a>
+                            </div>
+                        </div>
+                        <div id="center-box">
+                            <div class="animated-border-box-glow"></div>
+                            <div class="animated-border-box">
+                                <a href="https://www.instagram.com/__hyung03/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div id="center-box">
+                            <div class="animated-border-box-glow"></div>
+                            <div class="animated-border-box">
+                                <a href="https://www.facebook.com/hp.spring.39/"><i class="fa-brands fa-facebook"></i></a>
+                            </div>
+                        </div>
+                        <div id="center-box">
+                            <div class="animated-border-box-glow"></div>
+                            <div class="animated-border-box">
+                                <a href="https://www.linkedin.com/in/hnin-pwint-phyu-35b60a238/"><i class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="hp.pdf" class="btn animate__animated animate__fadeInDown animate__delay-3s" id="download">Download CV</a>        
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about  -->
+    <section class="about reveal" id="about">
+        <div class="container-lg">
+            <div class="row align-items-center align-content-center">
+                <div class="col-lg-6 col-sm-6 text-center">
+                    <img src="image/profile2.png" class="w-75">
+                </div>
+                <div class="col-lg-6 col-sm-6 mt-4" id="about-content">
+                    <h2>About <span style="color: #96E9C6;">Me</span></h2>
+                    <h4>Hi, I'm here to help your next project! </h4>
+                    <p>A beginner developer who is passionate about building software that solves real-world        problems. In my free time, you'll find me working on personal coding projects. I have experience with [ programming languages and frameworks ], and my goal as a developer is to become professional developer. I'm excited to continue learning and growing in this field."</p>
+                    <a href="hp.pdf" class="btn" id="hire">Hire Me</a>
+                </div>
+                <div class="col-lg-12 pb-3">
+                    <ul id="details-text">
+                        <li><a href="javascript:void(0)" class="text-content text-active" onclick="detailsClick(event,'skills')">Skills</a></li>
+                        <li><a href="javascript:void(0)" class="text-content" onclick="detailsClick(event,'experience')">Experience</a></li>
+                    </ul>
+                    <div id="detail-show">
+                        <div id="skills" class="row mx-auto">
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border border-dark-subtle rounded">
+                                    <img src="image/html.png" class="w-25 d-block me-3">
+                                    <h6>HTML</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/css3.png" class="w-25 d-block me-3">
+                                    <h6>CSS</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/javascript.png" class="w-25 d-block me-3">
+                                    <h6>JavaScript</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/bootstrap.png" class="w-25 d-block me-3">
+                                    <h6>Bootstrap</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/php.png" class="w-25 d-block me-3">
+                                    <h6>PHP</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/mysql.png" class="w-25 d-block me-3">
+                                    <h6>MySQL</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/laravel.jpg" class="w-25 d-block me-3">
+                                    <h6>Laravel</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                                <div class="d-flex align-items-center py-2 ps-2 border  border-dark-subtle rounded">
+                                    <img src="image/jquery.png" class="w-25 d-block me-3">
+                                    <h6>Jquery</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="experience" class="row mx-auto">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                                <label for="">October - 2023</label>
+                                <p>Worked with a partner to build a camping site, focusing on responsive frontend. Integrated secure PHP authentication for smooth login/logout.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- services  -->
+    <section id="services" class="services reveal">
+        <h2>My <span style="color: #932aea;">Services</span></h2>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-4 col-sm-6" id="services-content">
+                    <div id="web" class="px-3">
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>I can create custom websites and web applications that are tailored to your needs. I use a variety of programming languages and frameworks to develop websites that are fast, secure, and responsive. Whether you need a simple website or a complex web application, I can help bring your vision to life.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6" id="services-content">
+                    <div id="creative" class="px-3">
+                        <i class="fa-solid fa-lightbulb"></i>
+                        <h2>Creative Ideas</h2>
+                        <p>I offer creative idea generation services that can help you take your business to the next level. I can help you brainstorm new ideas for your business or project, and work with you to turn those ideas into actionable plans. From branding to marketing strategies, I can help you take your business to the next level.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4" id="services-content">
+                    <div id="photo" class="px-3">
+                        <i class="fa-solid fa-pen-to-square"></i>
+                        <h2>Photo Editing</h2>
+                        <p>I also offer photo editing services to enhance your digital images. Whether you need a photo retouched or a complete photo manipulation, I can help you achieve the perfect look for your project. I use the latest photo editing software and techniques to ensure high-quality results every time.</p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio  -->
+    <section id="portfolio" class="reveal">
+        <h2>My Latest<span style="color: #932aea;"> Projects</span></h2>
+
+        <div class="container swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/portfolio.png" class="w-100 rounded">
+                        </div>
+                        <h4>Personal Website</h4>
+                        <label>"Hello,this is my portfolio website. I created this website to display my profile, skills, services and projects. I'm excited to continue learning and growing in this field."</label>
+                        <p>Bootstrap, Javascript</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/portfolio">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://hp-daniel.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/ay.JPG" class="w-100 rounded">
+                        </div>
+                        <h4>AY Japan Bikes Shop</h4>
+                        <label>"A website that has an admin panel and a user site where you can create your own account. However, for some reason, I haven't hosted it yet, so I've only added the user interface."</label>
+                        <p>Laravel, Jquery, Javascript, Bootstrap</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/ay_lara">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://aybikes.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/stopwatch.png" style="width: 100px;" class="rounded d-block mx-auto">
+                        </div>
+                        <h4>Stopwatch Mini App</h4>
+                        <label>"A mini project for timing that has start, stop, and reset buttons. I built this for mobile screen size, but you can also use it on a website."</label>
+                        <p>Javascript, CSS</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/stopWatch">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://merry-dusk-25e055.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/university.png" style="width: 280px;" class="rounded d-block mx-auto">
+                        </div>
+                        <h4>University Website</h4>
+                        <label>"A responsive university website where users can view each course. I used some tools on this site to make it more stylish."</label>
+                        <p>Javascript, Bootstrap</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/university.web">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://ontarioweb.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/sunglasses.JPG" class="w-100 rounded">
+                        </div>
+                        <h4>Sunglasses Website</h4>
+                        <label>"A classic online sunglasses website to showcase some CSS skills. This website is responsive, but I highly recommend viewing it on a desktop."</label>
+                        <p>Bootstrap, CSS</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/Sunglasses">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://sunglasses-web.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div id="portfolio-content" class="p-3 rounded h-100">
+                        <div>
+                            <img src="image/cycle.JPG" class="w-100 rounded">
+                        </div>
+                        <h4>Simple Cycle Site</h4>
+                        <label>"I created this website to practice my PHP and MySQL skills. I have written MySQL code on GitHub, but you can't click the 'send' button on the website due to some problems."</label>
+                        <p>PHP, MySQL, Jquery</p>
+                        <span>
+                            <a href="https://github.com/daniel-0104/bicycle">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                            <a href="https://bicycle-web.netlify.app">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-btns">
+                <button class="button-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button class="button-next">
+                    <i class="fa-solid fa-chevron-right"></i> 
+                </button>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>               
+    </section>
+
+    <!-- contact  -->
+    <section id="contact" class="reveal">
+        <h2>Contact <span style="color: #932aea;">Me</span></h2>
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-lg-6 col-sm-6">
+                    <h4 style="font-family:Arial, Helvetica, sans-serif;">Let's work together!</h4>
+                    <div id="contact-info" >
+                        <p><i class="fa-solid fa-phone me-3"></i><label>+95972484290</label></p>
+                        <p><i class="fa-solid fa-envelope me-3"></i><label>hninpp03@gmail.com</label></p>
+                        <p><i class="fa-solid fa-location-dot me-3"></i><label>No.478/B, Hlaw Gar Rd, <br> South Dagon Township, Yangon</label></p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6">
+                    <form>
+                        <div class="container-lg">
+                            <div class="row text-center">
+                                <div class="col-lg-6 form-group">
+                                    <input type="text" placeholder="Full Name" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-lg-6 form-group">
+                                    <input type="number" placeholder="Phone Number" class="form-control" id="phone" required>
+                                </div>
+                                <div class="col-lg-12 form-group">
+                                    <input type="email" placeholder="Email Address" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-lg-12 form-group" id="textarea">
+                                    <textarea rows="6" placeholder="Message" class="form-control" id="message" required></textarea>
+                                </div>
+                                <div class="col-lg-12 form-group text-start">
+                                    <button type="submit" id="send"  style="background-color: #8121d0;" class="btn text-white" onclick="sendEmail(event);">Send Message</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer  -->
+    <section class="p-2" id="footer">
+        <div id="footer-social">
+            <a href="https://www.facebook.com/hp.spring.39/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.linkedin.com/in/hnin-pwint-phyu-35b60a238/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/__hyung03/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://github.com/daniel-0104"><i class="fa-brands fa-github"></i></a>
+        </div>
+        <hr>
+        <div id="footer-text">
+            <p><i class="fa-regular fa-copyright"></i><label>2023 - created by me | All Rights Reserved.</label></p>
+        </div>
+    </section>
+
+</body>
+
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<!-- js bootstrap  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+<!-- js  -->
+<script src="script.js"></script>
+
+</html>
