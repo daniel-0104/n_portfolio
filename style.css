@@ -39,7 +39,7 @@ body{
 
 /*................... nav bar start .................  */
 #navbar-example{
-    background-image: linear-gradient(to right top, #4f4557, #564b5d, #5e5162, #655768, #6d5d6e);
+    background-image: linear-gradient(to right top, #63566e, #564b5d, #5e5162, #655768, #6d5d6e);
 }
 .navbar .nav-link.active {
     color: var(--purple);
