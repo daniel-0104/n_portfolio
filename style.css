@@ -27,13 +27,13 @@ body{
     transform: translateY(0);
     opacity: 1;
 }
-::-webkit-scrollbar{
-    width: 10px;
+body::-webkit-scrollbar{
+    width: 8px;
 }
-::-webkit-scrollbar-track{
+body::-webkit-scrollbar-track{
     background: var(--light-grey);
 }
-::-webkit-scrollbar-thumb{
+body::-webkit-scrollbar-thumb{
     background: var(--purple);
     border-radius: 20px;
 }
@@ -462,6 +462,68 @@ body{
     background-color: var(--blue) !important;
 }
 /*................... portfolio end .................  */
+
+/*................... project video start .................  */
+#project-video{
+    padding: 40px 30px;
+    margin-top: 30px;
+    background-image: linear-gradient(to left bottom, #1b2432, #212733, #262a35, #2b2d36, #2f3037);
+    color: white;
+}
+#project-video video{
+    margin-top: 30px;
+    border-radius: 15px;
+}
+#video-content strong{
+    color: var(--gray);
+}
+#image-scroll{
+    overflow-y: auto;
+    height: 350px;
+}
+#image-scroll img{
+    display: block;
+    margin: auto;
+    width: 100%;
+    border-width: 1px 0 1px 1px;
+    border-color: var(--gray);
+    border-style: solid;
+}
+#image-scroll::-webkit-scrollbar{
+    width: 4px;
+}
+#image-scroll::-webkit-scrollbar-track{
+    background: var(--light-grey);
+}
+#image-scroll::-webkit-scrollbar-thumb{
+    background: var(--gray);
+    border-radius: 50px;
+}
+#screen-video p{
+    background-color: var(--purple);
+    width: fit-content;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+#screen-video video{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border: 1px solid var(--gray);
+}
+@media screen and (max-width: 576px){
+    #screen-video video{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    #image-scroll img{
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+}
+/*................... project video end .................  */
 
 /*................... contact start .................  */
 #contact{
